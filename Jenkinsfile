@@ -13,7 +13,7 @@ pipeline {
         stage("build & SonarQube analysis") {          
             steps {
                 dir('./fastfood_BackEnd/'){
-                    withSonarQubeEnv() {
+                    withSonarQubeEnv('sonarQube') {
                         sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=okevictor_fastfoodtests'
                         }
                 }
