@@ -7,7 +7,7 @@ pipeline {
     tools {
   maven 'M2_HOME'
 }
-
+//this line is comment out
     stages {
 
         stage("build & SonarQube analysis") {          
