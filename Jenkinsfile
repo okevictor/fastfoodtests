@@ -7,6 +7,7 @@ pipeline {
     tools {
   maven 'M2_HOME'
 }
+
     stages {
 
         stage("build & SonarQube analysis") {          
